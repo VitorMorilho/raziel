@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raziel · Natação, Hidroginástica e Personal</title>
+  <meta name="description" content="Raziel, instrutor de natação infantil, hidroginástica para idosos e personal trainer na Aquarius Academia, em Várzea Grande-MT.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230F3A4A'/><text x='50%' y='56%' font-family='Georgia' font-size='34' font-weight='700' fill='%23F2F6F5' text-anchor='middle' dominant-baseline='middle'>R</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Aplica o tema salvo antes de pintar a página, para não piscar -->
+  <script>
+    try {
+      const t = localStorage.getItem("tema");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topo">
+    <div class="topo__inner">
+      <a href="#inicio" class="marca" aria-label="Início">R</a>
+      <nav class="menu" aria-label="Seções">
+        <a href="#aulas">Aulas</a>
+        <a href="#personal">Personal</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="tema" type="button" aria-label="Alternar tema claro/escuro">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero__texto revelar">
+        <p class="sobretitulo">Natação · Hidroginástica · Personal</p>
+        <h1>Raziel</h1>
+        <p class="hero__lead">Ensino crianças a nadar com confiança, cuido da saúde da melhor idade na hidroginástica e monto treinos personalizados para quem quer resultado.</p>
+        <div class="hero__acoes">
+          <a class="botao botao--cheio" data-whatsapp target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="botao" href="#aulas">Ver aulas</a>
+        </div>
+      </div>
+      <ul class="hero__numeros revelar" aria-label="Resumo">
+        <li><strong>3</strong><span>modalidades: natação infantil, hidroginástica e personal</span></li>
+        <li><strong>5h</strong><span>às 21h, de segunda a sexta, na Aquarius</span></li>
+        <li><strong>42</strong><span>anos de história da Aquarius Academia em Várzea Grande</span></li>
+      </ul>
+    </section>
+
+    <section id="aulas" class="secao">
+      <div class="secao__cabeca revelar">
+        <p class="sobretitulo">Aulas</p>
+        <h2>Na água e fora dela</h2>
+      </div>
+      <div class="destaques" id="servicos"></div>
+    </section>
+
+    <section id="personal" class="secao secao--faixa">
+      <div class="secao__cabeca revelar">
+        <p class="sobretitulo">Personal</p>
+        <h2>Como funciona o treino personalizado</h2>
+      </div>
+      <ol class="etapas" id="etapas"></ol>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <div class="secao__cabeca revelar">
+        <p class="sobretitulo">Sobre</p>
+        <h2>Movimento que vira saúde, em qualquer idade</h2>
+      </div>
+      <div class="sobre__texto revelar">
+        <p>Sou o Raziel, instrutor na Aquarius Academia, em Várzea Grande-MT. Na piscina, dou aulas de natação para crianças e de hidroginástica para idosos: duas turmas bem diferentes, com o mesmo cuidado de respeitar o tempo e o limite de cada aluno.</p>
+        <p>Fora da água, atuo como personal trainer, montando treinos individuais de acordo com o objetivo, a rotina e a condição física de cada pessoa, e acompanhando de perto a evolução.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <div class="contato__caixa revelar">
+        <p class="sobretitulo">Contato</p>
+        <h2>Vamos começar?</h2>
+        <p>Chame no WhatsApp para saber horários, valores ou agendar uma aula experimental. Aquarius Academia, Várzea Grande-MT.</p>
+        <div class="hero__acoes">
+          <a class="botao botao--cheio" data-whatsapp target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="botao" data-instagram target="_blank" rel="noopener">Instagram da Aquarius</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Raziel · Aquarius Academia, Várzea Grande-MT</p>
+  </footer>
+
+  <dialog class="detalhe" id="detalhe" aria-labelledby="detalhe-titulo">
+    <button class="detalhe__fechar" type="button" aria-label="Fechar">×</button>
+    <div id="detalhe-conteudo"></div>
+  </dialog>
+
+  <script src="js/dados.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
